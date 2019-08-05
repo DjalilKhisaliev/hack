@@ -1,0 +1,24 @@
+h1 {
+    color: #27aedb;
+    text-align: center;
+}
+
+.body { 
+    word-break: break-all; 
+    word-break: break-word; 
+    word-break: keep-all; 
+    word-wrap: break-word; 
+    overflow-wrap: break-word; 
+    -webkit-hyphens: manual; 
+    -moz-hyphens: manual; 
+    -ms-hyphens: manual; 
+    hyphens: manual; 
+    -webkit-hyphens: auto; 
+    -moz-hyphens: auto; 
+    -ms-hyphens: auto; 
+    hyphens: auto; 
+    line-break: loose; 
+    line-break: strict; 
+    line-break: anywhere; 
+    text-wrap: balance; 
+}

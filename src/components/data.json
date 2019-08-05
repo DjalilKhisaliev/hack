@@ -1,0 +1,23 @@
+{
+    "user":{
+        "id": "",
+        "name": "",
+        "surname": "",
+        "lastcomment": ""
+    },
+    "messange":{
+        "chanelName": "",
+        "chanelID": "",
+        "text": "",
+        "id": ""
+    },
+    "queryForGetUsers":{
+        "id": "",
+        "name": "",
+        "surname": "",
+        "lastcomment": ""
+    },
+    "queryForGetMessanges":{
+        "id": ""
+    }
+}
