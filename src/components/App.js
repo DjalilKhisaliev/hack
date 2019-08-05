@@ -45,7 +45,7 @@ class App extends Component {
                 let msg = message.loading('Загрузка данных', 0);
                 if(testMode === 0){
                     console.log('Search Obj:', item)
-                    axios.post('localhost:1338/users', {...item})
+                    axios.post('lhttp://127.0.0.1:1338/users', {...item})
                         .then(response => {
                             console.log(response.data);
                             msg();
@@ -77,7 +77,7 @@ class App extends Component {
             if(count === 2){
                 if(testMode === 0){
                     console.log('Add Obj:', item)
-                    axios.post('localhost:1338/s', {...item})
+                    axios.post('http://127.0.0.1:1338/s', {...item})
                         .then(response => {message.success('Ползователь добавлен всписок поиска')})
                         .catch(error => {console.log(error); message.error('Не получилось добавить пользователя')});
                 }
@@ -96,7 +96,7 @@ class App extends Component {
         console.log(id.chats)
         let msg = message.loading('Загрузка данных, примерное время ожидания '+ ((id.chats.length / 2).toFixed(1)).toString() + ' мин.', 0);
         if(testMode === 0){
-            axios.post('localhost:1338/messages', {id: id.id})
+            axios.post('http://127.0.0.1:1338/messages', {id: id.id})
                 .then(response => {
                     console.log(response.data);
                     msg();
