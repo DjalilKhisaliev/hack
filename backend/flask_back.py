@@ -38,7 +38,7 @@ if not client.is_user_authorized():
 
 
 app = Flask(__name__)
-CORS(app, support_credentials=True)
+CORS(app)
 
 def serial(dct):
     for k in dct:
@@ -92,4 +92,4 @@ def messages():
     return({"data":messages_res})
 
 if __name__ == '__main__':
-    app.run(host= '127.0.0.1', port = 1338)
+    app.run(host= '0.0.0.0', port = 1338)
