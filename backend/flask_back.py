@@ -23,7 +23,7 @@ logging.basicConfig(filename="flask_app.log",
                             level=logging.INFO)
 logging.info("Running backend")
 
-conn = pymongo.MongoClient("185.203.118.3", 27017)
+conn = pymongo.MongoClient("localhost", 27017)
 
 api_id = 930961
 api_hash = '7b9e48ce403fb3cd47bb20185141c5cb'
@@ -92,4 +92,4 @@ def messages():
     return({"data":messages_res})
 
 if __name__ == '__main__':
-    app.run(host= '0.0.0.0', port = 1338)
+    app.run(host= '127.0.0.1', port = 1338)

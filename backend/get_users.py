@@ -22,7 +22,7 @@ api_id = 930961
 api_hash = '7b9e48ce403fb3cd47bb20185141c5cb'
 phone = '+79196471299'
 
-conn = pymongo.MongoClient("185.203.118.3", 27017)
+conn = pymongo.MongoClient("localhost", 27017)
 users = conn.local.Users
 
 
